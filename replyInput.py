@@ -22,7 +22,7 @@ def sms_reply():
         resp.message("My name is Alexa.")
         return str(resp)
     
-    resp.message("You said: {} - hehe habs geschafft".format(msg))
+    resp.message("You said: {} - default message".format(msg))
     return str(resp)
 
 if __name__ == "__main__":
