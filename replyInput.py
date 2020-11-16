@@ -17,7 +17,11 @@ def sms_reply():
     resp = MessagingResponse()
     if str(msg) == 'Hello':
         resp.message("Hello, how are you?")
-    else:
+        return str(resp)
+    if str(msg) == 'What\'s your name?':
+        resp.message("My name is Alexa.")
+        return str(resp)
+    
         resp.message("You said: {} - hehe habs geschafft".format(msg))
 
     return str(resp)
